@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestión facturación</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 10.</h3>
+        <h3>Escribe un programa que simule la creación de una factura. Debes utilizar todas las variables mencionadas anteriormente en un contexto relacionado con una compra.</h3>
+    </header>
+    <section>
+        <h1>gestión facturación</h1>
+    
+        <!-- Cuadro para introducir el número -->
+        <form id="facturaForm">
+            <table>
+                <tr>
+                    <td><label for="producto">Nombre del Producto:</label></td>
+                    <td><input id="producto" type="text" placeholder="Nombre del producto" required></td>
+                </tr>
+                <tr>
+                    <td><label for="precio">Precio por Unidad:</label></td>
+                    <td><input id="precio" type="number" placeholder="Precio" min="0" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cantidad">Cantidad Comprada:</label></td>
+                    <td><input id="cantidad" type="number" placeholder="Cantidad" min="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" onclick="generarFactura()">Generar Factura</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="resultado" style="margin-top: 20px;">
+            <h2>Factura Generada</h2>
+            <p><strong>Nombre del Producto:</strong> <span id="resultadoNombre"></span></p>
+            <p><strong>Precio por Unidad:</strong> $<span id="resultadoPrecio"></span></p>
+            <p><strong>Cantidad Comprada:</strong> <span id="resultadoCantidad"></span></p>
+            <p><strong>Total a Pagar:</strong> $<span id="resultadoTotal"></span></p>
+        </div>
+    </section>
+
+    <script src="script 1.10.js"></script>
+    <script src="funtion 1.10.js"></script>
+</body>
+</html>

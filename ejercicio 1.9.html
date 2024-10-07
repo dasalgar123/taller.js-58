@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Descuentos</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Programa de cálculo de descuentos según la cantidad comprada</h1>
+        <p>
+            Solicita al usuario el precio de un producto y la cantidad comprada, aplicando descuentos del 10% o 5% según corresponda. 
+        </p>
+    </header>
+    <article>
+        <br>
+        <table>
+            <tr>
+                <th>Consulta</th>
+                <th>Entrada</th>
+                <th>Acción</th>
+            </tr>
+            <tr>
+                <td><label for="numero_input"><h3>Precio del Producto</h3></label></td>
+                <td><input id="numero_input" class="calificacion_input" type="number" placeholder="Digite el precio" min="1"></td>
+            </tr>
+            <tr>
+                <td><label for="numero_input_2"><h3>Cantidad Comprada</h3></label></td>
+                <td><input id="numero_input_2" class="calificacion_input" type="number" placeholder="Digite la cantidad" min="1"></td>
+                <td rowspan="2"><button id="verBtn" class="ver_estado_btn" type="button">Calcular Total</button></td>
+            </tr>
+            <tr>
+                <td><label for="valor_compra"><h3>Valor Compra</h3></label></td>
+                <td><input id="valor_compra" type="text" readonly placeholder="Total sin descuento"></td>
+            </tr>
+            <tr>
+                <td><label for="valor_descuento"><h3>Valor Descuento</h3></label></td>
+                <td><input id="valor_descuento" type="text" readonly placeholder="Descuento aplicado"></td>
+            </tr>
+            <tr>
+                <td><label for="valor_total"><h3>Total a Pagar</h3></label></td>
+                <td><input id="valor_total" type="text" readonly placeholder="Total con descuento"></td>
+            </tr>
+        </table>
+    </article>
+
+    <div>
+        <script src="script 1.9.js"></script>
+        <script src="funtion 1.9.js"></script>
+    </div>
+</body>
+</html>

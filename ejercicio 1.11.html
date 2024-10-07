@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Facturación</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 10</h3>
+        <h3>Escribe un programa que simule la creación de una factura. Debes utilizar todas las variables mencionadas anteriormente en un contexto relacionado con una compra.</h3>
+    </header>
+    <section>
+        <h1>Gestión Facturación</h1>
+    
+        <form id="facturaForm" onsubmit="event.preventDefault(); calcularFactura();">
+            <table>
+                <tr>
+                    <td><label for="nombreCliente">Nombre del Cliente:</label></td>
+                    <td><input type="text" id="nombreCliente" class="form-control" required></td>
+                </tr>
+                <tr>
+                    <td><label for="producto">Producto:</label></td>
+                    <td><input type="text" id="producto" class="form-control" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cantidad">Cantidad:</label></td>
+                    <td><input type="number" id="cantidad" class="form-control" required></td>
+                </tr>
+                <tr>
+                    <td><label for="precioUnitario">Precio Unitario:</label></td>
+                    <td><input type="number" id="precioUnitario" class="form-control" step="0.01" required></td>
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" id="esEstudiante"> Cliente es estudiante</label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="tipoCliente">Tipo de Cliente (A, B, C, etc.):</label></td>
+                    <td><input type="text" id="tipoCliente" class="form-control" maxlength="1" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" type="submit">Generar Factura</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <div id="resultado" style="margin-top: 20px;">
+            <h2>Factura Generada</h2>
+            <p><strong>Nombre del Producto:</strong> <span id="resultadoNombre"></span></p>
+            <p><strong>Precio por Unidad:</strong> $<span id="resultadoPrecio"></span></p>
+            <p><strong>Cantidad Comprada:</strong> <span id="resultadoCantidad"></span></p>
+            <p><strong>Total a Pagar:</strong> $<span id="resultadoTotal"></span></p>
+        </div>
+    </section>
+
+    <script src="script 1.11.js"></script>
+    <script src="funtion 1.11.js"></script>
+</body>
+</html>

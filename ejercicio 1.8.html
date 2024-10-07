@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de: If-else y if-elseif-else JavaScript</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 08.</h3>
+        <h3>-Escribe un programa que calcule el índice de masa corporal (IMC) de una persona y le muestre un 
+            mensaje según el rango en el que se encuentre. Los requerimientos son:
+            Solicitar al usuario su peso en kilogramos.usuario su altura en metros.
+            Calcular el IMC utilizando la fórmula: IMC = peso / (altura * altura).
+            Mostrar un mensaje según el IMC:
+            IMC < 18.5: "Bajo peso".
+            18.5 <= IMC < 25: "Peso normal".
+            25 <= IMC < 30: "Sobrepeso".
+            IMC >= 30: "Obesidad".</h3>
+    </header>
+    <article><br>
+        <table>
+            <tr>
+                <th>Consulta</th>
+                <th>Entrada</th>
+                <th>Acción</th>
+            </tr>
+            <tr>
+                <td><label for="peso_input"><h3>Peso (kg)</h3></label></td>
+                <td><input id="peso_input" class="input_dato" type="number" placeholder="Digite su peso en kg"></td>
+            </tr>
+            <tr>
+                <td><label for="altura_input"><h3>Altura (m)</h3></label></td>
+                <td><input id="altura_input" class="input_dato" type="number" step="0.01" placeholder="Digite su altura en metros"></td>
+            </tr>
+            <tr>
+                <td><label for="resultado"><h3>Su IMC es:</h3></label></td>
+                <td><input id="resultado" type="text" readonly placeholder="Su IMC aparecerá aquí"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="calcularBtn" class="calcular_btn" type="button">Calcular IMC</button></td>
+            </tr>
+        </table>
+    </article>
+
+    <script src="funtion 1.8.js"></script>
+    <script src="script 1.8.js"></script>
+</body>
+</html>
