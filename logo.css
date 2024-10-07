@@ -1,0 +1,36 @@
+/* Definición del gradiente */
+.grad-start {
+    stop-color: #4285F4;
+    stop-opacity: 1;
+}
+
+.grad-end {
+    stop-color: #34A853;
+    stop-opacity: 1;
+}
+
+/* Fondo del rectángulo */
+.background {
+    fill:  #333;
+}
+
+/* Estilos del texto DS */
+.text-ds {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    fill: url(#grad1);
+}
+
+/* Líneas azules y verdes */
+.line-blue {
+    stroke: #4285F4;
+    stroke-width: 8;
+    fill: none;
+}
+
+.line-green {
+    stroke: #34A853;
+    stroke-width: 8;
+    fill: none;
+}

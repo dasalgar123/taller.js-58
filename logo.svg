@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100" height="50">
+    <style>
+                /* Definición del gradiente */
+            .grad-start {
+                stop-color: #4285F4;
+                stop-opacity: 1;
+            }
+
+            .grad-end {
+                stop-color: #34A853;
+                stop-opacity: 1;
+            }
+
+            /* Fondo del rectángulo */
+            .background {
+                fill:  #333;
+            }
+
+            /* Estilos del texto DS */
+            .text-ds {
+                font-family: Arial, sans-serif;
+                font-size: 80px;
+                font-weight: bold;
+                fill: url(#grad1);
+            }
+
+            /* Líneas azules y verdes */
+            .line-blue {
+                stroke: #4285F4;
+                stroke-width: 8;
+                fill: none;
+            }
+
+            .line-green {
+                stroke: #34A853;
+                stroke-width: 8;
+                fill: none;
+            }
+
+    </style>
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%">
+            <stop class="grad-start" offset="0%"/>
+            <stop class="grad-end" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <rect width="200" height="100" class="background"/>
+    <text x="20" y="80" class="text-ds">DS</text>
+    <path d="M160 20 L180 50 L160 80" class="line-blue"/>
+    <path d="M140 20 L160 50 L140 80" class="line-green"/>
+</svg>
