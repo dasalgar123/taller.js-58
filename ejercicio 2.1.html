@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Compra de Productos</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 2.1</h3>
+        <h3>- Solicita al usuario que ingrese dos números y un operador aritmético (+, -, *, /). Para realizar la operación correspondiente y mostrar el resultado en consola.</h3>
+    </header>
+    <section>
+        <h1> Realizar la operación correspondiente</h1>
+    
+        <table>
+            <tr>
+                <th colspan="2">Ingrese los datos</th>
+            </tr>
+            <tr>
+                <td><label for="product_type">Tipo de operación:</label></td>
+                <td>
+                    <select id="product_type">
+                        <option value="A">Más (+)</option>
+                        <option value="V">Menos (-)</option>
+                        <option value="E">Multiplicación (*)</option>
+                        <option value="D">División (/)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Numero_1_label">Número 1:</label></td>
+                <td><input type="number" id="Numero_1_label" placeholder="Número 1" required></td>
+            </tr>
+            <tr>
+                <td><label for="Numero_2_label">Número 2:</label></td>
+                <td><input type="number" id="Numero_2_label" placeholder="Número 2" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="calculateFromInputs()">Calcular Total</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Respuesta -->
+        <div>
+            <label for="opracion_label">Su operación es:</label>
+            <input type="text" id="opracion_resultado" readonly>
+        </div>
+    </section>
+    <script src="script 2.1.js"></script>
+    <script src="funtion 2.1.js"></script>
+</body>
+</html>

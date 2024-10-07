@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Sensor de Temperatura</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 16.</h3>
+        <h3>-Escribe un programa que simule un sensor de temperatura ambiente y un umbral de alerta. El
+            usuario ingresa la temperatura actual, y el programa verifica si la temperatura está por encima
+            del umbral de alerta. Si es así, muestra un mensaje de alerta. Si no, muestra un mensaje de
+            que la temperatura es normal.
+        </h3>
+    </header>
+    <section>
+        <h1>Verifica la temperatura</h1>
+    
+        <table>
+            <tr>
+                <th colspan="2">Ingrese los datos del sensor</th>
+            </tr>
+            <tr>
+                <td><label for="temperature_input">Temperatura ambiente (°C):</label></td>
+                <td><input type="number" id="temperature_input" placeholder="Temperatura en °C"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="moveElevator()">Verificar Temperatura</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Aquí agregamos el input y label para la respuesta -->
+        <div>
+            <label for="response">Respuesta:</label>
+            <input type="text" id="response" readonly>
+        </div>
+    </section>
+
+    <script src="script 1.16.js"></script>
+    <script src="funtion 1.16.js"></script>
+</body>
+</html>

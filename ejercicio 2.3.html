@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Ascensor</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 13.</h3>
+        <h3>- Desarrolla un programa que simule un ascensor que tiene un límite de peso. El usuario ingresa
+            su peso y el piso al que desea ir. El programa debe verificar si el peso está dentro del límite
+            permitido. Si es así, el ascensor se mueve al piso deseado. Si no, muestra un mensaje de que
+            el ascensor está sobrecargado.
+        </h3>
+    </header>
+    <section>
+        <h1>Verifica si es un piso válido</h1>
+    
+        <!-- Cuadro para introducir el peso -->
+        <div class="form-group">
+            <label for="pesoInput">Introduce tu peso (kg):</label>
+            <input type="number" id="pesoInput" placeholder="Escribe tu peso en kg" required>
+        </div>
+
+        <!-- Cuadro para introducir el número del piso -->
+        <div class="form-group">
+            <label for="numeroInput">Introduce un piso:</label>
+            <input type="number" id="numeroInput" placeholder="Escribe el número de piso" required>
+        </div>
+        
+        <button id="verBtn">Ver</button>
+    
+        <!-- Cuadro para mostrar el resultado -->
+        <div class="form-group">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly placeholder="Aquí se mostrará el resultado">
+        </div>
+    </section>
+
+    <script src="script 1.13.js"></script>
+    <script src="funtion 1.13.js"></script>
+</body>
+</html>

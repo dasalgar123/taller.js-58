@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Compra de Productos</title>
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo">
+        <h1>Ejercicios de: If-else y if-elseif-else JavaScript</h1>
+        <h3>Ejercicio # 2.1</h3>
+    </header>
+
+    <section>
+        <h1>Simulación de Compra de Productos</h1>
+        <form id="calculatorForm">
+            <label for="precio_label">Precio:</label>
+            <input type="number" id="precio_input" ><br><br>
+    
+            <label for="cantidad_label">Cantidad:</label>
+            <input type="number" id="cantidad_input" ><br><br>
+    
+            <label for="tipo_producto_label">Tipo de Producto (A, V, E):</label>
+            <label for="tipo_producto">Tipo de Producto:</label>
+            <select id="tipo_producto">
+                <option value="">Seleccione un tipo de producto</option>
+                <option value="A">A</option>
+                <option value="V">V</option>
+                <option value="E">E</option>
+            </select>
+    
+            <button type="button" onclick="calculate()">Calcular</button><br><br>
+
+            <!-- Input para mostrar el resultado del cálculo -->
+            <label for="valor_total_label">su valor total es:</label>
+            <input type="text" id="valor_total">
+
+        </form>
+    </section>
+
+    <script src="script 2.4.js"></script>
+    <script src=""></script>
+</body>
+</html>
