@@ -9,3 +9,4 @@ if (calificacion >= 60) {
 
 alert("Tu calificación es: " + calificacion + ". " + mensaje);
 
+
