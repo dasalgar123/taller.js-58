@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Ejemplos JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Taller de JavaScript</h1>
+        <label for="aprendiz"><strong>NOMBRE: </strong>Daniel Salinas</label><br>
+        <label for="cc"><strong>CC:</strong> 88310462</label><br>
+        <label for="ficha"><strong>FICHA: </strong>2628321</label><br>
+        <label for="intituto"><strong>INSTITUTO:</strong> Sena</label><br>
+        <label for="lugar"><strong>LUGAR: </strong>Calazado</label><br>
+        <label for="departamento"><strong>DEPEDENCIA: </strong>Tic Adso</label><br>
+        <label for="intructor"><strong>INSTRUCTOR: </strong>Nelson Rincón</label><br>
+    </header>
+
+    <nav>
+        <section>
+            <label for="If-else y if-elseif-else ">If-else y if-elseif-else </label>
+            <select id="If-else y if-elseif-else " onchange="cargarFrame('If-else y if-elseif-else ', this.value)">
+                <option value="">Seleccione un ejercicio</option>
+                <option value="ejercicio 1.1.html">Ejercicio_1.1</option>
+                <option value="Ejercicio 1.2.html">Ejercicio 1.2</option>
+                <option value="ejercicio 1.3.html">ejercicio 1.3</option>
+                <option value="Ejercicio 1.4.html">Ejercicio 1.4</option>
+                <option value="Ejercicio 1.5.html">Ejercicio 1.5</option>
+                <option value="ejercicio 1.6.html">Ejercicio_1.6</option>
+                <option value="Ejercicio 1.7.html">Ejercicio 1.7</option>
+                <option value="Ejercicio 1.8.html">Ejercicio 1.8</option>
+                <option value="Ejercicio 1.9.html">Ejercicio 1.9</option>
+                <option value="Ejercicio 1.10.html">Ejercicio 1.10</option>
+                <option value="ejercicio 1.11.html">Ejercicio_1.11</option>
+                <option value="Ejercicio 1.12.html">Ejercicio 1.12</option>
+                <option value="Ejercicio 1.13.html">Ejercicio 1.13</option>
+                <option value="Ejercicio 1.14.html">Ejercicio 1.14</option>
+                <option value="Ejercicio 1.15.html">Ejercicio 1.15</option>
+                <option value="Ejercicio 1.16.html">Ejercicio 1.16</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="Bucles">For</label>
+            <select id="Bucles" onchange="cargarFrame('lFor', this.value)">
+                <option value="">Seleccione un ejercicio</option>
+                <option value="ejercicio 2.2.html">Ejercicio 2.1</option>
+                <option value="ejercicio 2.2.html">Ejercicio 2.2</option>
+                <option value="Ejercicio 2.3.html">Ejercicio 2.3</option>
+                <option value="Ejercicio 2.4.html">Ejercicio 2.4</option>
+                <option value="Ejercicio 2.5.html">Ejercicio 2.5</option>
+                <option value="Ejercicio 2.6.html">Ejercicio 2.6</option>
+                <option value="Ejercicio 2.7.html">Ejercicio 2.7</option>
+                <option value="Ejercicio 2.8.html">Ejercicio 2.8</option>
+            </select>
+        </section>
+        
+        <section>
+            <label for="While">While</label>
+            <select id="While" onchange="cargarFrame('While', this.value)">
+                <option value="">Seleccione un ejercicio</option>
+                <option value="Ejercicio 3.1.html">Ejercicio 3.1</option>
+                <option value="Ejercicio 3.2.html">Ejercicio 3.2</option>
+                <option value="Ejercicio 3.3.html">Ejercicio 3.3</option>
+                <option value="Ejercicio 3.4.html">Ejercicio 3.4</option>
+                <option value="Ejercicio 3.5.html">Ejercicio 3.5</option>
+                <option value="Ejercicio 3.6.html">Ejercicio 3.6</option>
+                <option value="Ejercicio 3.7.html">Ejercicio 3.7</option>
+                <option value="Ejercicio 3.8.html">Ejercicio 3.8</option>
+                <option value="Ejercicio 3.9.html">Ejercicio 3.9</option>
+                <option value="Ejercicio 3.10.html">Ejercicio 3.10</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="Do While">Do While</label>
+            <select id="Do While" onchange="cargarFrame('Do While', this.value)">
+                <option value="">Seleccione un ejercicio</option>
+                <option value="Ejercicio 4.1.html">Ejercicio 4.1</option>
+                <option value="Ejercicio 4.2.html">Ejercicio 4.2</option>
+                <option value="Ejercicio 4.3.html">Ejercicio 4.3</option>
+                <option value="Ejercicio 4.4.html">Ejercicio 4.4</option>
+                <option value="Ejercicio 4.5.html">Ejercicio 4.5</option>
+                <option value="Ejercicio 4.6.html">Ejercicio 4.6</option>
+                <option value="Ejercicio 4.7.html">Ejercicio 4.7</option>
+                <option value="Ejercicio 4.8.html">Ejercicio 4.8</option>
+                <option value="Ejercicio 4.9.html">Ejercicio 4.9</option>
+                <option value="Ejercicio 4.10.html">Ejercicio 4.10</option>
+            </select>
+        </section>
+        <section>
+            <label for="Switch-Case">Switch-Case</label>
+            <select id="Switch-Case" onchange="cargarFrame('Switch-Case', this.value)">
+                <option value="">Seleccione un tema</option>
+                <option value="Ejercicio 5.1.html">Ejercicio 5.1</option>
+                <option value="Ejercicio 5.2.html">Ejercicio 5.2</option>
+                <option value="Ejercicio 5.3.html">Ejercicio 5.3</option>
+                <option value="Ejercicio 5.4.html">Ejercicio 5.4</option>
+                <option value="Ejercicio 5.5.html">Ejercicio 5.5</option>
+                <option value="Ejercicio 5.6.html">Ejercicio 5.6</option>
+                <option value="Ejercicio 5.7.html">Ejercicio 5.7</option>
+                <option value="Ejercicio 5.8.html">Ejercicio 5.8</option>
+            </select>
+        </section>
+    </nav>
+
+    <iframe id="resultado" class="frame" src="" frameborder="0"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
